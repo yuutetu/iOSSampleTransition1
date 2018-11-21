@@ -18,16 +18,21 @@ import UIKit
             switch self {
             case .recommended:
                 let viewController = RecommendedViewController.viewController(viewModel: RecommendedViewModel())
-                viewController.tabBarItem = UITabBarItem(title: "りんご", image: nil, selectedImage: nil)
-                return viewController
+                // DefaultのNavigationControllerをここで差し込んでいるの微妙そう。
+                // でも、アプリ内で使用するNavigationControllerは共通化すべきな気がするから良いか。
+                let navigationController = UINavigationController(rootViewController: viewController)
+                navigationController.tabBarItem = UITabBarItem(title: "りんご", image: nil, selectedImage: nil)
+                return navigationController
             case .new:
                 let viewController = NewViewController.viewController()
-                viewController.tabBarItem = UITabBarItem(title: "バナナ", image: nil, selectedImage: nil)
-                return viewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                navigationController.tabBarItem = UITabBarItem(title: "バナナ", image: nil, selectedImage: nil)
+                return navigationController
             case .myPage:
                 let viewController = MyPageViewController.viewController()
-                viewController.tabBarItem = UITabBarItem(title: "ぶどう", image: nil, selectedImage: nil)
-                return viewController
+                let navigationController = UINavigationController(rootViewController: viewController)
+                navigationController.tabBarItem = UITabBarItem(title: "ぶどう", image: nil, selectedImage: nil)
+                return navigationController
             }
         }
     }

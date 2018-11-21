@@ -26,7 +26,7 @@ class RecommendedViewController: UIViewController, RecommendedViewModelOutput {
         viewModel.output = self
         tableView.dataSource = viewModel
         tableView.delegate = viewModel
-        // APIとか叩いた後に
+        // UseCase層とかでAPIを叩いた後に
         viewModel.cellModels = ["1", "2", "3", "4", "5", "6", "7", "8"]
     }
 
@@ -38,6 +38,6 @@ class RecommendedViewController: UIViewController, RecommendedViewModelOutput {
     func didSelectCellModel(cellModel: String) {
         let viewModel = DetailViewModel(text: cellModel)
         let viewController = DetailViewController.viewController(viewModel: viewModel)
-        present(viewController, animated: true, completion: nil)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
