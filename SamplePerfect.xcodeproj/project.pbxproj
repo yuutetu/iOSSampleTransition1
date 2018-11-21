@@ -14,6 +14,9 @@
 		2062168221A56FE1003931BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2062168021A56FE1003931BB /* LaunchScreen.storyboard */; };
 		2062168D21A56FE1003931BB /* SamplePerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062168C21A56FE1003931BB /* SamplePerfectTests.swift */; };
 		2062169821A56FE1003931BB /* SamplePerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062169721A56FE1003931BB /* SamplePerfectUITests.swift */; };
+		206216A821A57239003931BB /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216A721A57239003931BB /* RootCoordinator.swift */; };
+		206216AA21A5757C003931BB /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216A921A5757C003931BB /* RootTabBarController.storyboard */; };
+		206216AC21A5761E003931BB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216AB21A5761E003931BB /* RootTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2062169321A56FE1003931BB /* SamplePerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePerfectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2062169721A56FE1003931BB /* SamplePerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePerfectUITests.swift; sourceTree = "<group>"; };
 		2062169921A56FE1003931BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206216A721A57239003931BB /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		206216A921A5757C003931BB /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
+		206216AB21A5761E003931BB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		2062167621A56FDF003931BB /* SamplePerfect */ = {
 			isa = PBXGroup;
 			children = (
+				206216A521A570BD003931BB /* UI */,
 				2062167721A56FDF003931BB /* AppDelegate.swift */,
 				2062167921A56FDF003931BB /* ViewController.swift */,
 				2062167B21A56FDF003931BB /* Main.storyboard */,
@@ -123,6 +130,48 @@
 				2062169921A56FE1003931BB /* Info.plist */,
 			);
 			path = SamplePerfectUITests;
+			sourceTree = "<group>";
+		};
+		206216A521A570BD003931BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				206216A621A57143003931BB /* Root */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		206216A621A57143003931BB /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				206216AF21A576A0003931BB /* MyPage */,
+				206216AE21A5768B003931BB /* New */,
+				206216AD21A57671003931BB /* Recommended */,
+				206216A721A57239003931BB /* RootCoordinator.swift */,
+				206216A921A5757C003931BB /* RootTabBarController.storyboard */,
+				206216AB21A5761E003931BB /* RootTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		206216AD21A57671003931BB /* Recommended */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recommended;
+			sourceTree = "<group>";
+		};
+		206216AE21A5768B003931BB /* New */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		206216AF21A576A0003931BB /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +280,7 @@
 			files = (
 				2062168221A56FE1003931BB /* LaunchScreen.storyboard in Resources */,
 				2062167F21A56FE1003931BB /* Assets.xcassets in Resources */,
+				206216AA21A5757C003931BB /* RootTabBarController.storyboard in Resources */,
 				2062167D21A56FDF003931BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +307,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2062167A21A56FDF003931BB /* ViewController.swift in Sources */,
+				206216AC21A5761E003931BB /* RootTabBarController.swift in Sources */,
+				206216A821A57239003931BB /* RootCoordinator.swift in Sources */,
 				2062167821A56FDF003931BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

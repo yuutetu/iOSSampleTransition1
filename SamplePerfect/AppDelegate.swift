@@ -12,9 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    // https://qiita.com/endorno@github/items/d0b25c47e3c5a7b48865
+    lazy var rootCoordinator: RootCoordinator = {
+        return RootCoordinator(window: self.window!)
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        rootCoordinator.start()
         // Override point for customization after application launch.
         return true
     }
