@@ -17,6 +17,12 @@
 		206216A821A57239003931BB /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216A721A57239003931BB /* RootCoordinator.swift */; };
 		206216AA21A5757C003931BB /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216A921A5757C003931BB /* RootTabBarController.storyboard */; };
 		206216AC21A5761E003931BB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216AB21A5761E003931BB /* RootTabBarController.swift */; };
+		206216B121A586C1003931BB /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216B021A586C1003931BB /* MyPageViewController.swift */; };
+		206216B321A586F9003931BB /* MyPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216B221A586F9003931BB /* MyPageViewController.storyboard */; };
+		206216B521A58819003931BB /* NewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216B421A58819003931BB /* NewViewController.storyboard */; };
+		206216B721A58824003931BB /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216B621A58824003931BB /* NewViewController.swift */; };
+		206216BB21A5887D003931BB /* RecommendedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216BA21A5887D003931BB /* RecommendedViewController.swift */; };
+		206216BD21A5888F003931BB /* RecommendedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216BC21A5888F003931BB /* RecommendedViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		206216A721A57239003931BB /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		206216A921A5757C003931BB /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
 		206216AB21A5761E003931BB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		206216B021A586C1003931BB /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		206216B221A586F9003931BB /* MyPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageViewController.storyboard; sourceTree = "<group>"; };
+		206216B421A58819003931BB /* NewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewViewController.storyboard; sourceTree = "<group>"; };
+		206216B621A58824003931BB /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		206216BA21A5887D003931BB /* RecommendedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedViewController.swift; sourceTree = "<group>"; };
+		206216BC21A5888F003931BB /* RecommendedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecommendedViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,8 @@
 		206216AD21A57671003931BB /* Recommended */ = {
 			isa = PBXGroup;
 			children = (
+				206216BA21A5887D003931BB /* RecommendedViewController.swift */,
+				206216BC21A5888F003931BB /* RecommendedViewController.storyboard */,
 			);
 			path = Recommended;
 			sourceTree = "<group>";
@@ -163,6 +177,8 @@
 		206216AE21A5768B003931BB /* New */ = {
 			isa = PBXGroup;
 			children = (
+				206216B421A58819003931BB /* NewViewController.storyboard */,
+				206216B621A58824003931BB /* NewViewController.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -170,6 +186,8 @@
 		206216AF21A576A0003931BB /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				206216B021A586C1003931BB /* MyPageViewController.swift */,
+				206216B221A586F9003931BB /* MyPageViewController.storyboard */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -278,7 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206216B321A586F9003931BB /* MyPageViewController.storyboard in Resources */,
 				2062168221A56FE1003931BB /* LaunchScreen.storyboard in Resources */,
+				206216B521A58819003931BB /* NewViewController.storyboard in Resources */,
+				206216BD21A5888F003931BB /* RecommendedViewController.storyboard in Resources */,
 				2062167F21A56FE1003931BB /* Assets.xcassets in Resources */,
 				206216AA21A5757C003931BB /* RootTabBarController.storyboard in Resources */,
 				2062167D21A56FDF003931BB /* Main.storyboard in Resources */,
@@ -306,8 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206216B121A586C1003931BB /* MyPageViewController.swift in Sources */,
+				206216BB21A5887D003931BB /* RecommendedViewController.swift in Sources */,
 				2062167A21A56FDF003931BB /* ViewController.swift in Sources */,
 				206216AC21A5761E003931BB /* RootTabBarController.swift in Sources */,
+				206216B721A58824003931BB /* NewViewController.swift in Sources */,
 				206216A821A57239003931BB /* RootCoordinator.swift in Sources */,
 				2062167821A56FDF003931BB /* AppDelegate.swift in Sources */,
 			);

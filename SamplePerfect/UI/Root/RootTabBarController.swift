@@ -25,7 +25,7 @@ import UIKit
                 viewController.tabBarItem = UITabBarItem(title: "バナナ", image: nil, selectedImage: nil)
                 return viewController
             case .myPage:
-                let viewController = UIViewController()
+                let viewController = MyPageViewController.viewController()
                 viewController.tabBarItem = UITabBarItem(title: "ぶどう", image: nil, selectedImage: nil)
                 return viewController
             }
