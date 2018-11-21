@@ -17,7 +17,7 @@ import UIKit
         func viewController() -> UIViewController {
             switch self {
             case .recommended:
-                let viewController = RecommendedViewController.viewController()
+                let viewController = RecommendedViewController.viewController(viewModel: RecommendedViewModel())
                 viewController.tabBarItem = UITabBarItem(title: "りんご", image: nil, selectedImage: nil)
                 return viewController
             case .new:
@@ -49,5 +49,10 @@ import UIKit
 
     private func setupTabItem() {
         viewControllers = TabItem.allCases.map{ $0.viewController() }
+    }
+
+    // WARN: 今は使われていないが、これが出来る
+    func chengeTo(tabItem: TabItem) {
+        selectedIndex = tabItem.rawValue
     }
 }

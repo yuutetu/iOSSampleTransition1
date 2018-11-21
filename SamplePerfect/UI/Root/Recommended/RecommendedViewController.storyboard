@@ -16,9 +16,24 @@
                     <view key="view" contentMode="scaleToFill" id="wkb-bX-4q4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-ir-vEg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ICz-Q4-RaA" firstAttribute="bottom" secondItem="5Be-ir-vEg" secondAttribute="bottom" id="3TH-Pt-d0w"/>
+                            <constraint firstItem="ICz-Q4-RaA" firstAttribute="trailing" secondItem="5Be-ir-vEg" secondAttribute="trailing" id="6TO-6q-vIU"/>
+                            <constraint firstItem="5Be-ir-vEg" firstAttribute="top" secondItem="ICz-Q4-RaA" secondAttribute="top" id="8PT-uw-wrz"/>
+                            <constraint firstItem="5Be-ir-vEg" firstAttribute="leading" secondItem="ICz-Q4-RaA" secondAttribute="leading" id="kkM-gl-yMG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ICz-Q4-RaA"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="5Be-ir-vEg" id="ooa-HM-Eg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcW-nU-mvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
