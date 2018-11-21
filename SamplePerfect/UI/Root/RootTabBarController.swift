@@ -17,11 +17,11 @@ import UIKit
         func viewController() -> UIViewController {
             switch self {
             case .recommended:
-                let viewController = UIViewController()
+                let viewController = RecommendedViewController.viewController()
                 viewController.tabBarItem = UITabBarItem(title: "りんご", image: nil, selectedImage: nil)
                 return viewController
             case .new:
-                let viewController = UIViewController()
+                let viewController = NewViewController.viewController()
                 viewController.tabBarItem = UITabBarItem(title: "バナナ", image: nil, selectedImage: nil)
                 return viewController
             case .myPage:
