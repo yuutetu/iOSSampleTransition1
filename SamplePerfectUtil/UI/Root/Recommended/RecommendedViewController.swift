@@ -13,7 +13,7 @@ class RecommendedViewController: UIViewController, RecommendedViewModelOutput {
     private var viewModel: RecommendedViewModel!
 
     static func viewController(viewModel: RecommendedViewModel) -> RecommendedViewController {
-        let viewController = UIStoryboard.init(name: String(describing: RecommendedViewController.self), bundle: nil).instantiateInitialViewController() as! RecommendedViewController
+        let viewController = UIStoryboard.init(name: String(describing: RecommendedViewController.self), bundle: Bundle(for: self)).instantiateInitialViewController() as! RecommendedViewController
         viewController.viewModel = viewModel
         viewModel.output = viewController
         return viewController

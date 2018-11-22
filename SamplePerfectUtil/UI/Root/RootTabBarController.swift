@@ -38,7 +38,7 @@ import UIKit
     }
 
     static func viewController() -> RootTabBarController {
-        let viewController = UIStoryboard.init(name: String(describing: RootTabBarController.self), bundle: nil).instantiateInitialViewController() as! RootTabBarController
+        let viewController = UIStoryboard.init(name: String(describing: RootTabBarController.self), bundle: Bundle(for: self)).instantiateInitialViewController() as! RootTabBarController
         return viewController
     }
 

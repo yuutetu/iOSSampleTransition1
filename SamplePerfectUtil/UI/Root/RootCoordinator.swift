@@ -8,15 +8,15 @@
 
 import UIKit
 
-class RootCoordinator {
+public class RootCoordinator {
     let window: UIWindow
     private var tabBarController: RootTabBarController!
 
-    init(window: UIWindow) {
+    public init(window: UIWindow) {
         self.window = window
     }
 
-    func start() {
+    public func start() {
         tabBarController = RootTabBarController.viewController()
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()

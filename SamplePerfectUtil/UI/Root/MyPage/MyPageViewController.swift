@@ -10,7 +10,7 @@ import UIKit
 
 class MyPageViewController: UIViewController {
     static func viewController() -> MyPageViewController {
-        let viewController = UIStoryboard.init(name: String(describing: MyPageViewController.self), bundle: nil).instantiateInitialViewController() as! MyPageViewController
+        let viewController = UIStoryboard.init(name: String(describing: MyPageViewController.self), bundle: Bundle(for: self)).instantiateInitialViewController() as! MyPageViewController
         return viewController
     }
 }

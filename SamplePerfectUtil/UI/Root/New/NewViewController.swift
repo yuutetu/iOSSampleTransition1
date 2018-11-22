@@ -10,7 +10,7 @@ import UIKit
 
 class NewViewController: UIViewController {
     static func viewController() -> NewViewController {
-        let viewController = UIStoryboard.init(name: String(describing: NewViewController.self), bundle: nil).instantiateInitialViewController() as! NewViewController
+        let viewController = UIStoryboard.init(name: String(describing: NewViewController.self), bundle: Bundle(for: self)).instantiateInitialViewController() as! NewViewController
         return viewController
     }
 }

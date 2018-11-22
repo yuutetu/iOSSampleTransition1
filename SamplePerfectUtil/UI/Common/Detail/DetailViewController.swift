@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     private var viewModel: DetailViewModel!
 
     static func viewController(viewModel: DetailViewModel) -> DetailViewController {
-        let viewController = UIStoryboard.init(name: String(describing: DetailViewController.self), bundle: nil).instantiateInitialViewController() as! DetailViewController
+        let viewController = UIStoryboard.init(name: String(describing: DetailViewController.self), bundle: Bundle(for: self)).instantiateInitialViewController() as! DetailViewController
         viewController.viewModel = viewModel
         viewModel.output = viewController
         return viewController
