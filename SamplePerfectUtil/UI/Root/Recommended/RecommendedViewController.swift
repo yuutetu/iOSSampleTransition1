@@ -35,10 +35,17 @@ class RecommendedViewController: UIViewController, RecommendedViewModelOutput {
         tableView.reloadData()
     }
 
-    func didSelectCellModel(cellModel: String) {
+    func didSelect(cellModel: String) {
         // TODO: 本来ならば、CellModelからDetailViewModelへの変換処理が入る
         let viewModel = DetailViewModel(text: cellModel)
         let viewController = DetailViewController.viewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func accessoryButtonTapped(cellModel: String) {
+        // TODO: 本来ならば、CellModelからDetailViewModelへの変換処理が入る
+        let viewModel = DetailViewModel(text: cellModel)
+        let viewController = DetailViewController.viewController(viewModel: viewModel)
+        present(viewController, animated: true, completion: nil)
     }
 }
