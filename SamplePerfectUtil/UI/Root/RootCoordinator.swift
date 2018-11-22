@@ -9,17 +9,22 @@
 import UIKit
 
 public class RootCoordinator {
-    let window: UIWindow
-    private var tabBarController: RootTabBarController!
+    let startClosure: ((UIViewController) -> Void)?
+    private lazy var tabBarController: RootTabBarController = {
+        return RootTabBarController.viewController()
+    }()
 
-    public init(window: UIWindow) {
-        self.window = window
+    public init(startClosure: ((UIViewController) -> Void)?) {
+        self.startClosure = startClosure
     }
 
     public func start() {
-        tabBarController = RootTabBarController.viewController()
-        window.rootViewController = tabBarController
-        window.makeKeyAndVisible()
+        startClosure?(tabBarController)
+    }
+
+    // For URL Scheme
+    func changeTo(tab: RootTabBarController.TabItem) {
+        tabBarController.chengeTo(tabItem: tab)
     }
 }
 

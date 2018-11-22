@@ -115,6 +115,9 @@
 		20D46DD121A76A20007A408C /* SamplePerfectUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePerfectUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D46DD821A76A21007A408C /* SamplePerfectUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePerfectUtilTests.swift; sourceTree = "<group>"; };
 		20D46DDA21A76A21007A408C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D46DF521A76BC5007A408C /* RecommendedViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RecommendedViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20D46DF621A76D7B007A408C /* NewViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NewViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20D46DF721A7710F007A408C /* MyPageViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPageViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,7 @@
 		2062167621A56FDF003931BB /* SamplePerfect */ = {
 			isa = PBXGroup;
 			children = (
+				20D46DF421A76B7F007A408C /* Playgrounds */,
 				2062167721A56FDF003931BB /* AppDelegate.swift */,
 				2062167E21A56FE1003931BB /* Assets.xcassets */,
 				2062168021A56FE1003931BB /* LaunchScreen.storyboard */,
@@ -296,6 +300,16 @@
 				20D46DDA21A76A21007A408C /* Info.plist */,
 			);
 			path = SamplePerfectUtilTests;
+			sourceTree = "<group>";
+		};
+		20D46DF421A76B7F007A408C /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				20D46DF521A76BC5007A408C /* RecommendedViewController.playground */,
+				20D46DF621A76D7B007A408C /* NewViewController.playground */,
+				20D46DF721A7710F007A408C /* MyPageViewController.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

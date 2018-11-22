@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     // https://qiita.com/endorno@github/items/d0b25c47e3c5a7b48865
     lazy var rootCoordinator: RootCoordinator = {
-        return RootCoordinator(window: self.window!)
+        return RootCoordinator(startClosure: { (viewController) in
+            self.window?.rootViewController = viewController
+            self.window?.makeKeyAndVisible()
+        })
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
