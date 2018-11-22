@@ -118,6 +118,7 @@
 		20D46DF521A76BC5007A408C /* RecommendedViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RecommendedViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		20D46DF621A76D7B007A408C /* NewViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NewViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		20D46DF721A7710F007A408C /* MyPageViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPageViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20D46DF821A77274007A408C /* DetailsViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DetailsViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +309,7 @@
 				20D46DF521A76BC5007A408C /* RecommendedViewController.playground */,
 				20D46DF621A76D7B007A408C /* NewViewController.playground */,
 				20D46DF721A7710F007A408C /* MyPageViewController.playground */,
+				20D46DF821A77274007A408C /* DetailsViewController.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
