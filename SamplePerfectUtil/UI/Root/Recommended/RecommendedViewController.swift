@@ -44,8 +44,8 @@ class RecommendedViewController: UIViewController, RecommendedViewModelOutput {
 
     func accessoryButtonTapped(cellModel: String) {
         // TODO: 本来ならば、CellModelからDetailViewModelへの変換処理が入る
-        let viewModel = DetailViewModel(text: cellModel)
-        let viewController = DetailViewController.viewController(viewModel: viewModel)
+        let viewModel = EditDetailViewModel(text: cellModel)
+        let viewController = EditDetailViewController.viewController(viewModel: viewModel)
         present(viewController, animated: true, completion: nil)
     }
 }

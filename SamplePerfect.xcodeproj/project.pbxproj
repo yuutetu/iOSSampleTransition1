@@ -30,6 +30,9 @@
 		20D46DF121A76A66007A408C /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216A721A57239003931BB /* RootCoordinator.swift */; };
 		20D46DF221A76A66007A408C /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206216A921A5757C003931BB /* RootTabBarController.storyboard */; };
 		20D46DF321A76A66007A408C /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206216AB21A5761E003931BB /* RootTabBarController.swift */; };
+		20D46DFC21A7761D007A408C /* EditDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D46DFB21A7761D007A408C /* EditDetailViewController.swift */; };
+		20D46DFE21A7764A007A408C /* EditDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D46DFD21A7764A007A408C /* EditDetailViewController.storyboard */; };
+		20D46E0021A7765C007A408C /* EditDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D46DFF21A7765C007A408C /* EditDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,10 @@
 		20D46DF621A76D7B007A408C /* NewViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NewViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		20D46DF721A7710F007A408C /* MyPageViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPageViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		20D46DF821A77274007A408C /* DetailsViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DetailsViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		20D46DFB21A7761D007A408C /* EditDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailViewController.swift; sourceTree = "<group>"; };
+		20D46DFD21A7764A007A408C /* EditDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditDetailViewController.storyboard; sourceTree = "<group>"; };
+		20D46DFF21A7765C007A408C /* EditDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailViewModel.swift; sourceTree = "<group>"; };
+		20D46E0121A7799D007A408C /* EditDetailViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EditDetailViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +276,7 @@
 		206216C221A5936E003931BB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				20D46DFA21A77602007A408C /* Edit Detail */,
 				206216C321A59386003931BB /* Detail */,
 			);
 			path = Common;
@@ -310,8 +318,19 @@
 				20D46DF621A76D7B007A408C /* NewViewController.playground */,
 				20D46DF721A7710F007A408C /* MyPageViewController.playground */,
 				20D46DF821A77274007A408C /* DetailsViewController.playground */,
+				20D46E0121A7799D007A408C /* EditDetailViewController.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		20D46DFA21A77602007A408C /* Edit Detail */ = {
+			isa = PBXGroup;
+			children = (
+				20D46DFB21A7761D007A408C /* EditDetailViewController.swift */,
+				20D46DFD21A7764A007A408C /* EditDetailViewController.storyboard */,
+				20D46DFF21A7765C007A408C /* EditDetailViewModel.swift */,
+			);
+			path = "Edit Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +523,7 @@
 				20D46DEF21A76A66007A408C /* RecommendedViewController.storyboard in Resources */,
 				20D46DE821A76A4C007A408C /* DetailViewController.storyboard in Resources */,
 				20D46DF221A76A66007A408C /* RootTabBarController.storyboard in Resources */,
+				20D46DFE21A7764A007A408C /* EditDetailViewController.storyboard in Resources */,
 				20D46DEC21A76A5C007A408C /* NewViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,12 +566,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D46DFC21A7761D007A408C /* EditDetailViewController.swift in Sources */,
 				20D46DE721A76A4C007A408C /* DetailViewController.swift in Sources */,
 				20D46DF321A76A66007A408C /* RootTabBarController.swift in Sources */,
 				20D46DEA21A76A57007A408C /* MyPageViewController.swift in Sources */,
 				20D46DE921A76A4C007A408C /* DetailViewModel.swift in Sources */,
 				20D46DEE21A76A66007A408C /* RecommendedViewController.swift in Sources */,
 				20D46DF021A76A66007A408C /* RecommendedViewModel.swift in Sources */,
+				20D46E0021A7765C007A408C /* EditDetailViewModel.swift in Sources */,
 				20D46DED21A76A5C007A408C /* NewViewController.swift in Sources */,
 				20D46DF121A76A66007A408C /* RootCoordinator.swift in Sources */,
 			);
